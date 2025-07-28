@@ -1,0 +1,26 @@
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+ 
+ .hero{
+     width: 1500px;
+     background-image: url('images/background.jpg');
+     margin-top: 5%;
+     height: 91vh;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     background-repeat: no-repeat;
+     place-items: center;
+     align-self: center;
+     text-align: center;
+}
+ 
+
+button{
+    background-color: pink;
+}
+
+h1,h2{
+    font-family: 'Dancing Script', cursive;
+  
+}

@@ -1,0 +1,72 @@
+.creamy{
+     align-items: center;
+     justify-content: center;
+      text-align: center;
+
+}
+
+.creamyContainer{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.creamyCard1{
+     display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: lightpink;
+    width: 20%;
+    padding-bottom: 10%;
+   }
+
+  .creamyCard1 button{
+    background-color: bisque;
+   }
+
+ .creamyCard2{
+   position: relative;
+   height: 200px;
+    width: 20%;
+    padding-bottom: 10%;
+    background-image: url(/images/Plateau.jpeg);
+ }
+
+ .creamyCard2 button{
+    background-color: white;
+    position: absolute;
+     bottom: 20px;
+    left: 50;
+    transform: translateX(-50%);
+   }
+
+ .creamyCard3{
+    margin-bottom: 10px;
+     position: relative;
+    background-size: cover;
+    width: 20%;
+    padding-bottom: 10%;
+    background-image: url(/images/cake.jpeg);
+ }
+
+ .creamyCard3 button{
+    background-color: white;
+    position: absolute;
+    bottom: 20px ;
+    left: 40;
+    transform: matrix(-50%);
+      }
+
+  .creamyCard3 p{
+   margin-bottom: 20%;
+  }
+
+   .creamyTittle{
+    color: goldenrod;
+   }
+ 
+ 
+  
+
+   
