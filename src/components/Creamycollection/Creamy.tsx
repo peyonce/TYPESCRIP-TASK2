@@ -1,6 +1,5 @@
 import styles from './creamy.module.css'
-import React from 'react'
-export function Creamy(){
+ export function Creamy(){
   return(
     <div className={styles.creamy}>
       <h1 className={styles.creamyTittle}>Cupcake Collection</h1> 

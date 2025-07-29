@@ -1,6 +1,5 @@
 import styles from './cakes.module.css'
-import React from 'react'
-export function Kakes(){
+ export function Kakes(){
 return(
 
     <div className={styles.cakes}>
