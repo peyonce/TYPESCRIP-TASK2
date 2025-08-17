@@ -1,26 +1,70 @@
- @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
- 
- .hero{
-     width: 1500px;
-     background-image: url('images/background.jpg');
-     margin-top: 5%;
-     height: 91vh;
-     background-size: cover;
-     display: flex;
-     justify-content: center;
-     background-repeat: no-repeat;
-     place-items: center;
-     align-self: center;
-     text-align: center;
-}
- 
-
-button{
-    background-color: pink;
+.hero {
+  width: 100%;
+  min-height: 90vh;
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
 }
 
-h1,h2{
-    font-family: 'Dancing Script', cursive;
-  
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4); /* dark overlay for better text contrast */
+}
+
+.heroContent {
+  position: relative;
+  color: #fff;
+  z-index: 1;
+  max-width: 90%;
+}
+
+.heroTitle {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  margin: 0.5rem 0;
+}
+
+.heroDescription {
+  font-size: 1.2rem;
+  margin: 1rem 0 2rem;
+}
+
+.heroButton {
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 25px;
+  background: #ff6f61;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.heroButton:hover {
+  transform: scale(1.05);
+  background: #ff8a75;
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+
+  .heroDescription {
+    font-size: 1rem;
+  }
+
+  .heroButton {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
 }

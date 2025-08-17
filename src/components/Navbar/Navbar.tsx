@@ -1,47 +1,28 @@
-import styles from '../Navbar/Navbar.module.css'
-export function Navbar(){
-  return(
-    <nav className={styles.nav}>
-     <a href='#' className={styles.nav_brand}><h2>Nthabi</h2>
-     <p></p>
-     </a>
-     <ul className={styles.nav_menu}>
-       <li className={styles.nav_item}>
-        <a href='#' className={styles.nav_link}>
-           Home
-        </a>
-       </li>
-       <li className={styles.nav_item}>
-          <a href='#' className={styles.nav_link}>
-          Menu
-          </a>
-       </li>
-       <li className={styles.nav_item}>
-         <a href='#' className={styles.nav_link}>
-            Cakes
-            </a>
-            </li>
-            <li className={styles.nav_item}>
-              <a href='#' className={styles.nav_link}>
-                Pastries
-              </a>
-            </li>
-              <li className={styles.nav_item}>
-                <a href='#' className={styles.nav_link}>
-                  About
-                </a>
-              </li>
-              <li className={styles.nav_item}>
-                <a href='#' className={styles.nav_link}>
-                  Contact
-                </a>
+import React, { useState } from "react";
+import styles from "./Navbar.module.css";
 
-              </li>
-     </ul>
+export const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <nav className={styles.navbar}>
+      <div className={styles.logo}>
+        <p>Nthabi's</p>
+        <h2>Pastry Shop</h2>
+      </div>
+
+      <div className={styles.menuIcon} onClick={() => setIsOpen(!isOpen)}>
+        &#9776;
+      </div>
+
+      <ul className={`${styles.navLinks} ${isOpen ? styles.active : ""}`}>
+        <li><a href="#" className={styles.navLink}>Home</a></li>
+        <li><a href="#" className={styles.navLink}>Menu</a></li>
+        <li><a href="#" className={styles.navLink}>Cakes</a></li>
+        <li><a href="#" className={styles.navLink}>Pastries</a></li>
+        <li><a href="#" className={styles.navLink}>About</a></li>
+        <li><a href="#" className={styles.navLink}>Contact</a></li>
+      </ul>
     </nav>
-  )
-}
-
-  
-
-  
+  );
+};
