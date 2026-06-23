@@ -1,70 +1,80 @@
-# React + TypeScript + Vite
+  Cake Collection UI
+A beautifully designed, responsive Cake Collection user interface showcasing delicious cakes with a hero section and elegant footer. Built with React, TypeScript, and CSS Modules.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ 
+ About The Project
+This is a visually appealing cake collection UI designed for bakeries, pastry shops, or dessert businesses. It features a stunning hero section with a cake-themed background and a well-organized footer with social media integration.
 
-Currently, two official plugins are available:
+What Makes This Special
+  Elegant Design - Warm, inviting colors perfect for a bakery brand
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ Cake-Focused - Showcases dessert products beautifully
 
-## Expanding the ESLint configuration
+ Fully Responsive - Looks amazing on all devices
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+ Fast Performance - Optimized for quick loading
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Features
+Hero Section
+Full-width background image - Captivating cake-themed imagery
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Dark overlay - Improves text readability
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Elegant typography - Dancing Script font for a sophisticated feel
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Call-to-Action button - Perfect for "Order Now" or "View Menu"
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Responsive text sizes - Adapts to all screen sizes
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# React-UI
+Footer Component
+Three-column layout
+
+Left: Brand image/logo
+
+Center: Love/interest tags (Cake, Dessert, Pastry)
+
+Right: Social media links
+
+Social media integration - Facebook, LinkedIn, Pinterest
+
+Professional branding - Clean, minimal design
+
+Mobile-optimized - Stacks vertically on smaller screens
+
+Technologies Used
+React - UI Library
+
+TypeScript - Type Safety
+
+CSS Modules - Scoped Styling
+
+Google Fonts - Dancing Script
+
+  
+Prerequisites
+Node.js (v14 or higher)
+
+npm or yarn
+
+Installation
+Clone the repository
+
+bash
+git clone https://github.com/peyonce/TYPESCRIP-TASK2.git
+Navigate to project directory
+
+bash
+cd TYPESCRIP-TASK2
+Install dependencies
+
+bash
+npm install
+ 
+npm start 
+
+Responsive Design
+Fully responsive with mobile-first approach:
+
+Mobile: ≤ 768px (single column)
+
+Tablet/Desktop: ≥ 769px (full layout)
